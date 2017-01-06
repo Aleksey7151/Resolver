@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>BaitAndSwitch</id>
+    <id>DependenciesResolver</id>
     <version>1.0.0</version>
-    <title>Dependency resolver</title>
+    <title>Dependency service for native xamarin Android and iOS apps</title>
     <authors>Alexei Safonov</authors>
     <projectUrl>https://github.com/Aleksey7151/CryptoSQLite</projectUrl>
     <iconUrl>https://github.com/Aleksey7151/CryptoSQLite/blob/master/CryptoSQLite/PackageIcon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Simple and light-weight dependency service.</summary>
+    <summary>Simple and lightweight dependency service for native xamarin Android and iOS apps.</summary>
     <description>
       Supported Xamarin platforms:
       - Android
       - iOS
+      
+      1. Install DependencyResolver to PCL project, that contains platform depended interface TService.
+      2. Install DependencyResolver to Android/iOS projects.
+      3. Add DependencyAttribute to platform specific implementation of TService in each project Android/iOS
+      4. Use 'TService instance = Resolver.Get[TService]();' function in your PCL project for getting platform specific implementation of TService at runtime. 
     </description>
-    <tags>dependency service resolver</tags>
+    <tags>dependency service xamarin android ios monotouch monoandroid</tags>
     <dependencies>
     </dependencies>
   </metadata>

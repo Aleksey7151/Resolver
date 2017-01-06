@@ -1,11 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace DependencyResolver
 {
-    public class Resolver
+    public static class Resolver
     {
+        public static TService Get<TService>()
+        {
+            return default(TService);
+        }
+    }
+
+    [AttributeUsage(AttributeTargets.Assembly)]
+    public class DependencyAttribute : Attribute
+    {
+        public Type ImplementatorType { get; }
+        public DependencyAttribute(Type implementatorType)
+        {
+            ImplementatorType = implementatorType;
+        }
     }
 }

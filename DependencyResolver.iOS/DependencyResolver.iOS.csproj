@@ -42,5 +42,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <Import Project="..\DependencyResolver.Shared\DependencyResolver.Shared.projitems" Label="Shared" Condition="Exists('..\DependencyResolver.Shared\DependencyResolver.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
