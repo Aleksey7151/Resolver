@@ -13,7 +13,6 @@
       Supported Xamarin platforms:
       - Android
       - iOS
-      
       1. Install DependencyResolver to PCL project, that contains platform depended interface TService.
       2. Install DependencyResolver to Android/iOS projects.
       3. Add DependencyAttribute to platform specific implementation of TService in each project Android/iOS
@@ -24,10 +23,13 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="BaitAndSwitch.Pcl/bin/Release/BaitAndSwitch.dll" target="lib/portable-net45+win8+wpa81+wp8/BaitAndSwitch.dll"/>
-    <file src="BaitAndSwitch.Pcl/bin/Release/BaitAndSwitch.xml" target="lib/portable-net45+win8+wpa81+wp8/BaitAndSwitch.xml"/>
+    <file src="DependencyResolver/bin/Release/DependencyResolver.dll" target="lib/portable-net45+win8+wpa81+wp8/DependencyResolver.dll"/>
+    <file src="DependencyResolver/bin/Release/DependencyResolver.xml" target="lib/portable-net45+win8+wpa81+wp8/DependencyResolver.xml"/>
 
-    <file src="BaitAndSwitch.Droid/bin/Release/BaitAndSwitch.dll" target="lib/monoandroid/BaitAndSwitch.dll"/>  <!--Library for Android-->
-    <file src="BaitAndSwitch.iOS/bin/Release/BaitAndSwitch.dll" target="lib/monotouch/BaitAndSwitch.dll"/>      <!--Library for iOS-->
+    <file src="DependencyResolver.Droid/bin/Release/DependencyResolver.dll" target="lib/monoandroid/DependencyResolver.dll"/>  <!--Library for Android-->
+    <file src="DependencyResolver.Droid/bin/Release/DependencyResolver.xml" target="lib/monoandroid/DependencyResolver.xml"/>  <!--Library for Android-->
+    
+    <file src="DependencyResolver.iOS/bin/Release/DependencyResolver.dll" target="lib/monotouch/DependencyResolver.dll"/>      <!--Library for iOS-->
+    <file src="DependencyResolver.iOS/bin/Release/DependencyResolver.xml" target="lib/monotouch/DependencyResolver.xml"/>      <!--Library for iOS-->
   </files>
 </package>
