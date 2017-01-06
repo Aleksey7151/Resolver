@@ -5,7 +5,16 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver", "DependencyResolver\DependencyResolver.csproj", "{9885138A-4492-4EBE-87AA-F48202706EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver.Droid", "DependencyResolver.Droid\DependencyResolver.Droid.csproj", "{69B7A1AB-A2F3-46D6-981B-2B0EB3E8994F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyResolver.iOS", "DependencyResolver.iOS\DependencyResolver.iOS.csproj", "{AF097550-736A-4340-BF41-EAF0825B73DB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DependencyResolver.Shared", "DependencyResolver.Shared\DependencyResolver.Shared.shproj", "{CFD904AB-89BD-4BBA-936E-3A3667751956}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DependencyResolver.Shared\DependencyResolver.Shared.projitems*{cfd904ab-89bd-4bba-936e-3a3667751956}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -15,6 +24,14 @@ Global
 		{9885138A-4492-4EBE-87AA-F48202706EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9885138A-4492-4EBE-87AA-F48202706EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9885138A-4492-4EBE-87AA-F48202706EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B7A1AB-A2F3-46D6-981B-2B0EB3E8994F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B7A1AB-A2F3-46D6-981B-2B0EB3E8994F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B7A1AB-A2F3-46D6-981B-2B0EB3E8994F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B7A1AB-A2F3-46D6-981B-2B0EB3E8994F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF097550-736A-4340-BF41-EAF0825B73DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF097550-736A-4340-BF41-EAF0825B73DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF097550-736A-4340-BF41-EAF0825B73DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF097550-736A-4340-BF41-EAF0825B73DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

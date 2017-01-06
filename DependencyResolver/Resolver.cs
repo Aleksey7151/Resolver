@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DependencyResolver
 {
-    public class Class1
+    public class Resolver
     {
     }
 }

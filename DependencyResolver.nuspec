@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>BaitAndSwitch</id>
+    <version>1.0.0</version>
+    <title>Dependency resolver</title>
+    <authors>Alexei Safonov</authors>
+    <projectUrl>https://github.com/Aleksey7151/CryptoSQLite</projectUrl>
+    <iconUrl>https://github.com/Aleksey7151/CryptoSQLite/blob/master/CryptoSQLite/PackageIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Simple and light-weight dependency service.</summary>
+    <description>
+      Supported Xamarin platforms:
+      - Android
+      - iOS
+    </description>
+    <tags>dependency service resolver</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="BaitAndSwitch.Pcl/bin/Release/BaitAndSwitch.dll" target="lib/portable-net45+win8+wpa81+wp8/BaitAndSwitch.dll"/>
+    <file src="BaitAndSwitch.Pcl/bin/Release/BaitAndSwitch.xml" target="lib/portable-net45+win8+wpa81+wp8/BaitAndSwitch.xml"/>
+
+    <file src="BaitAndSwitch.Droid/bin/Release/BaitAndSwitch.dll" target="lib/monoandroid/BaitAndSwitch.dll"/>  <!--Library for Android-->
+    <file src="BaitAndSwitch.iOS/bin/Release/BaitAndSwitch.dll" target="lib/monotouch/BaitAndSwitch.dll"/>      <!--Library for iOS-->
+  </files>
+</package>
