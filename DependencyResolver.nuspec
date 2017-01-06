@@ -5,8 +5,7 @@
     <version>1.0.0</version>
     <title>Dependency service for native xamarin Android and iOS apps</title>
     <authors>Alexei Safonov</authors>
-    <projectUrl>https://github.com/Aleksey7151/CryptoSQLite</projectUrl>
-    <iconUrl>https://github.com/Aleksey7151/CryptoSQLite/blob/master/CryptoSQLite/PackageIcon.png</iconUrl>
+    <projectUrl>https://github.com/Aleksey7151/Resolver</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Simple and lightweight dependency service for native xamarin Android and iOS apps.</summary>
     <description>
@@ -31,5 +30,10 @@
     
     <file src="DependencyResolver.iOS/bin/Release/DependencyResolver.dll" target="lib/monotouch/DependencyResolver.dll"/>      <!--Library for iOS-->
     <file src="DependencyResolver.iOS/bin/Release/DependencyResolver.xml" target="lib/monotouch/DependencyResolver.xml"/>      <!--Library for iOS-->
+  
+    <!--Samples (Content files)-->
+    <file src="PlatformSpecificInterface.PCL.cs.txt" target="content"/>
+    <file src="MainActivity.Sample.cs.txt" target="content"/>
+    <file src="ViewController.Sample.cs.txt" target="content"/>
   </files>
 </package>
